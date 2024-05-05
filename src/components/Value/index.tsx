@@ -54,8 +54,6 @@ export default function Value({ value, onReset }: ValueProps) {
     useCallback((state) => (state as State).getProduct(value), [value])
   );
 
-  console.log(product, status);
-
   const fetchProductBySku = useStore(
     (state) => (state as State).fetchProductBySku
   );
